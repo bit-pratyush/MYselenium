@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
      ChromeOptions options = new ChromeOptions(); 
       //UncommentwhenrunningonJenkinsoranymachinewithnodisplay: 
       
-      options.setBinary("/opt/google/chrome/google-chrome");
+      
       options.addArguments("--headless=new","--no-sandbox","--disable-dev-shm-usage","--disable-gpu","--window-size=1920,1080");
   
       WebDriver driver = new ChromeDriver(options); 
