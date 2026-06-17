@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
     public class App {
      public static void main(String[] args) { 
      ChromeOptions options = new ChromeOptions(); 
+      //UncommentwhenrunningonJenkinsoranymachinewithnodisplay: 
+      options.addArguments("--headless=new","--disable-gpu", "--window-size=1920,1080");
   
       WebDriver driver = new ChromeDriver(options); 
      driver.get("https://www.saucedemo.com/"); 
